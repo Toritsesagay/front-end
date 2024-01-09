@@ -1,0 +1,216 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+
+/* styling the dashboard section */
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+}
+
+.mainscreenleft {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+
+.photoContainer{
+    width:100%;
+    background-color: #ffffff;
+    height:120px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.imageContainer{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    border: 1px solid rgb(238, 238, 238);
+    overflow: hidden;
+    background-color: rgb(235, 255, 235);
+    
+}
+
+
+.imageContainer img{
+    width:100%;
+}
+
+
+.photoContainer button{
+    width:120px;
+    background-color:rgb(109, 156, 109);
+    bottom:20px;
+    right:10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    align-self: flex-end;
+}
+
+
+.accountContainer{
+    background-color: #fff;
+    border-radius: 20px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+
+.accountContainer .account{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+
+.accountnumber{
+}
+
+.accountnumber,.accountname{
+   
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.accountname span{
+    align-self: center;
+    color:rgb(133, 177, 133);
+    font-size: 1.2rem;
+    margin-right: 2px;
+}
+
+
+
+.menuContainer{
+    background-color: #fff;
+    border-radius: 20px;
+    padding:10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(238, 238, 238);  
+}
+
+
+.menuContainer .menuCard{
+    display: flex;
+    align-items: center;
+    width:100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+.menuContainer .menuCard span{
+    color:rgb(133, 177, 133);
+    font-size: 1.4rem;
+    margin-right: 10px;
+
+}
+
+.menuContainer .menuCard p{
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+    font-weight: 400;
+    
+}
+
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+    .mainscreenleft {
+        width: 98%;
+    }
+
+
+
+    
+    
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+    
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    .mainscreen {
+        padding-left: 0px;
+        align-items: center;
+    }
+  
+
+   
+   
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+    
+
+ 
+
+
+}

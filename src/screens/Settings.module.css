@@ -1,0 +1,160 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+
+/* styling the dashboard section */
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+}
+
+.mainscreenleft {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+
+.accountCard{
+    width:100%;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #fff;
+   
+}
+.accountCard .accountHeader{
+    padding:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(109, 156, 109);
+    width:100%;
+    font-size: 1.2rem;
+    color:#fff
+}
+
+.accountCard  .body{
+    padding:5px
+}
+
+.settingCard{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+.settingCard .left{
+    display: flex;
+    width:80%;
+    align-items: center;
+}
+.settingCard span{
+    margin-right: 15px;
+    font-size: 1.2rem;
+    
+}
+
+
+.settingCard .left p{
+    font-size: 1rem;
+    margin-right: 10px;
+    color:rgb(70,70,70);
+    font-weight: 500;
+}
+
+
+.settingCard .right{
+    display: flex;
+    width:20%;
+    justify-content: flex-end;
+}
+
+.moreText{
+    color:rgb(109, 156, 109);
+    padding-left: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+    .mainscreenleft {
+        width: 98%;
+    }
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+    
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    .mainscreen {
+        padding-left: 0px;
+        align-items: center;
+    }
+  
+
+   
+   
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+    
+
+ 
+
+
+}

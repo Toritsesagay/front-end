@@ -1,0 +1,165 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+
+/* styling the dashboard section */
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    
+
+}
+
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+}
+
+.mainscreenleft {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+
+.notificationCard{
+    background-color: #fff;
+    width:100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:space-between;
+    cursor: pointer;
+}
+
+.notificationCard:hover{
+    background-color: rgb(253, 253, 253);
+}
+
+.notificationCard p{
+    margin:0px;
+    padding: 0px;
+
+}
+
+.notificationCard .photoContainer{
+    width:50px;
+    overflow: hidden;
+    border-radius: 100%;
+
+}
+
+.notificationCard .photoContainer img{
+    width:100%
+    
+}
+
+
+.notificationCard .infoContainer{
+    
+
+
+}
+
+.notificationCard .infoContainer .info{
+    margin: 0px;
+    color:rgb(78, 78, 78);
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.notificationCard .infoContainer .info span{
+    color: rgb(109, 156, 109);
+}
+
+.notificationCard .infoContainer .dateContainer{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.notificationCard .infoContainer .dateContainer p{
+    display:flex;
+    align-items: center;
+    margin-right: 20px;
+    color:rgb(148, 148, 148)
+}
+
+.notificationCard  .iconContainer span{
+    color:rgb(109, 156, 109);
+
+}
+
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+
+
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+    .mainscreenleft {
+        width: 98%;
+    }
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+    
+
+
+
+
+
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    .mainscreen {
+        padding-left: 0px;
+        align-items: center;
+    }
+   
+
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+ 
+
+
+}

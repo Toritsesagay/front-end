@@ -1,0 +1,144 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+}
+
+/*  end of styling the sidebar */
+.screenContainer .maindashboard {
+    width: 83%;
+    overflow-y: scroll;
+}
+
+/* styling the dashboard section */
+
+.mainscreen {
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    margin: 10px;
+    gap:10px;
+    width:60%
+}
+
+
+.mainscreen div.billcard{
+    background-color: #fff;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.mainscreen div.billcard span{
+    background-color: rgb(241, 255, 241);
+    padding: 18px;
+    border-radius:100%;
+  
+}
+
+.mainscreen div.billcard p{
+    color:black;
+    font-size: .9rem;
+    font-weight: 600;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+
+
+    .mainscreen {
+        padding-left: 5px;
+        width:100%
+    }
+    .screenContainer .maindashboard {
+        width:70%;
+        overflow-y: scroll;
+    }
+
+    
+
+
+
+}
+
+
+/* mobile screen*/
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+    
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        overflow-y: scroll;
+    }
+
+
+
+    .mainscreen {
+        padding-left: 0px;
+    }
+
+
+    .mainscreen {
+        display: grid;
+        grid-template-columns:30% 30% 30%;
+        margin: 10px;
+        gap:10px;
+        width:100%
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .mainscreen {
+        display: grid;
+        grid-template-columns:48% 48%;
+        margin: 10px;
+        gap:10px;
+        width:100%;
+        justify-content: center;
+    }
+    
+   
+}
+
+
+@media screen and (max-width: 230px) {}
