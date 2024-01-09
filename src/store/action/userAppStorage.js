@@ -46,7 +46,7 @@ export const signup = (data) => {
   let objData = data
   return async (dispatch, getState) => {
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/signup`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -125,7 +125,7 @@ export const login = (data) => {
     let userData = data
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch('https://back-end-zf7t.onrender.com/login', {
+      const response = await fetch('https://back-end-ym54.onrender.com/login', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -255,7 +255,7 @@ export const login = (data) => {
 export const verifiedEmail = (data) => {
   return async (dispatch, getState) => {
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/emailverify`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/emailverify`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -312,14 +312,14 @@ export const verifiedEmail = (data) => {
 }
 */
 
-//https://back-end-zf7t.onrender.com
+//https://back-end-ym54.onrender.com
 
 //this one is the email verification page after signin up
 export const checkverification = (email) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/checkverification/${email}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/checkverification/${email}`, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -385,7 +385,7 @@ export const verifying = (token) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/verifying/${token}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/verifying/${token}`, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -446,7 +446,7 @@ export const sendRecoverEmail = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/recoverpassword`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/recoverpassword`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -500,7 +500,7 @@ export const checkRecoverTokenValidity = (token) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/checkrecovertokenvalidity/${token}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/checkrecovertokenvalidity/${token}`, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -541,7 +541,7 @@ export const changePassword = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://back-end-zf7t.onrender.com/changepassword/${data.token}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/changepassword/${data.token}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -590,7 +590,7 @@ export const phoneSignup = (data) => {
       } = getState().userAuth
 
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/phonesignup/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/phonesignup/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -645,7 +645,7 @@ export const verifyPhone = (data) => {
 
       console.log(userToken)
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/verifyphone/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/verifyphone/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -699,7 +699,7 @@ export const registeration = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/registeration/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/registeration/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -754,7 +754,7 @@ export const profilePhoto = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/pofilephoto/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/pofilephoto/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -813,7 +813,7 @@ export const hasCardFun = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/hascard/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/hascard/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -865,7 +865,7 @@ export const createCard = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/createcard/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/createcard/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -921,7 +921,7 @@ export const deleteCard = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/deletecard/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/deletecard/${userToken}`, {
         method: 'DELETE',
         headers: {
           "Content-Type": "application/json",
@@ -973,7 +973,7 @@ export const fetchDeposits = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/withdraws/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/withdraws/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1021,7 +1021,7 @@ export const createDeposits = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/deposits/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/deposits/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1071,7 +1071,7 @@ export const withdraws = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/withdraw/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/withdraw/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1142,7 +1142,7 @@ export const fetchWithdraw = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/withdraws/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/withdraws/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1189,7 +1189,7 @@ export const fetchAccounts = () => {
       let {
         userToken
       } = getState().userAuth
-      const response = await fetch(`https://back-end-zf7t.onrender.com/accounts/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/accounts/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1242,7 +1242,7 @@ export const submitTaxCode = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/tax/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/tax/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1294,7 +1294,7 @@ export const submitBsaCode = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/bsa/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/bsa/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1346,7 +1346,7 @@ export const sendAccount = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/sendAccount/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/sendAccount/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1414,7 +1414,7 @@ export const fetchTransfersAccount = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/transferstoaccount/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/transferstoaccount/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1461,7 +1461,7 @@ export const sendOtpCode= () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/otpcode/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/otpcode/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1508,7 +1508,7 @@ export const submitOtpCode= (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/otpcode/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/otpcode/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1558,7 +1558,7 @@ export const fetchAllBenefeciaries = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/beneficiaries/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/beneficiaries/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1604,7 +1604,7 @@ export const addBeneficiaries = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/beneficiaries/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/beneficiaries/${userToken}`, {
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1655,7 +1655,7 @@ export const deleteBeneficiaries = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/beneficiaries/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/beneficiaries/${userToken}`, {
         method:'DELETE',
         headers: {
           "Content-Type": "application/json",
@@ -1703,7 +1703,7 @@ export const fetchAllNotifications = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/notifications/${userToken}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/notifications/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1749,7 +1749,7 @@ export const deleteNotification = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`https://back-end-zf7t.onrender.com/notifications/${userToken}/${data._id}`, {
+      const response = await fetch(`https://back-end-ym54.onrender.com/notifications/${userToken}/${data._id}`, {
         method:'DELETE',
         headers: {
           "Content-Type": "application/json",
