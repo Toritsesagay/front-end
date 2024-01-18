@@ -1,0 +1,483 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+}
+
+/*  end of styling the sidebar */
+.screenContainer .maindashboard {
+    width: 83%;
+}
+
+/* styling the dashboard section */
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.mainscreenleft {
+    width: 60%;
+}
+
+
+
+
+
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+
+/* charts section*/
+
+.chartSection {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    background-color: #fff;
+
+}
+
+.chartContainerleft {
+    width: 50%;
+    margin: 5px;
+    position: relative;
+    
+    text-align: center;
+
+}
+
+.creditCard,.yellowcreditCard {
+    background-color: rgb(109, 156, 109);;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 20px;
+
+    
+}
+.creditCard{
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+
+}
+
+.yellowcreditCard {
+    background-color: orange;
+    position: absolute;
+    top:-10px;
+    z-index: 1;
+    width: 80%;
+
+}
+
+.creditCard h2 {
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -20px;
+
+}
+
+.creditCard .circleContainer {
+    position: absolute;
+    top: -40px;
+    display: flex;
+    gap: 5px;
+    left: -20px;
+
+}
+
+.creditCard .circle {
+    background-color: rgba(250, 250, 250, 0.3);
+    width: 170px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+
+
+}
+
+
+.creditCard .cardInfo {
+
+    margin-top: 100px;
+    width: 100%
+}
+
+.creditCard .cardInfo h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 100%;
+
+}
+
+.creditCard .cardInfo p {
+    font-size: 1.4rem;
+    color: #fff
+}
+
+.creditCard .cardInfo {}
+
+.creditCard .circle:nth-of-type(2) {
+    position: relative;
+    left: -50px;
+    top: -26px
+}
+
+
+
+
+.chartContainerright {
+    width: 50%;
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    /*box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);*/
+    display: flex;
+    flex-direction: column;
+}
+
+.chartSection h1 {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    margin-bottom: 20px;
+}
+
+
+.chartContainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+
+
+
+.chart {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.chartBar {
+    width: 8px;
+    height: 120px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/*##e0e0979;*/
+.chartBarMiddle {
+    width: 100%;
+    
+    background-color:   rgb(109, 156, 109);
+}
+
+
+
+.chartBarBottom {
+    width: 100%;
+    background-color: orange;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+
+.chartInfo {
+    display: flex;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.chartInfo p {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.chartInfo p.expenses span,
+.chartInfo p.deposits span {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(109, 156, 109);
+    display: inline-block;
+    margin-right: 1px;
+}
+.chartInfo p.deposits span {
+    background-color: orange;
+}
+
+
+.mainscreenright {
+    width: 60%;
+    padding: 10px;
+
+}
+
+.mainscreenright .menuContainer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+.recent {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+
+}
+
+.recent h1 {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    margin-bottom: 30px;
+}
+
+.recentContainer {
+    display: flex;
+}
+
+.recentContainer .recentSend,
+.recentContainer .recentRecharge,
+.recentContainer .recentAmount,
+.recentContainer .recentPay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.recentContainer span {
+    padding: 20px;
+    border-radius: 100%;
+    color: #fff
+}
+
+.recentContainer p {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.recentAmount span {
+    background-color: rgb(109, 156, 109);
+
+}
+
+.recentRecharge span,
+.recentSend span,
+.recentPay span {
+    background-color: rgb(221, 255, 221);
+    color: rgb(85, 147, 85);
+
+}
+
+
+
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+
+
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+
+
+
+    .mainscreenleft {
+        width: 100%;
+    }
+
+    .mainscreenright {
+        width: 100%;
+
+    }
+
+
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+  
+
+
+
+    /* styling the chart section */
+    .chartSection {
+        width: 100%;
+    }
+
+
+    /* styling the chart section */
+    .recent {
+        width: 100%;
+    }
+
+    .mainscreenright .menuContainer {
+        grid-template-columns: 48% 48%;
+    }
+
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+    .screenContainer {
+        height: 87vh
+    }
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+   
+
+
+
+    .mainscreen {
+        padding-left: 0px;
+    }
+
+
+
+
+    /* charts section*/
+
+    .chartSection {
+        width: 97%;
+
+    }
+
+    /*styling recent*/
+    .recentContainer p {
+        font-size: .8rem;
+    }
+
+    .chartInfo {
+        display: flex;
+        width: 100%;
+        justify-content:flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .chart {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+        justify-content: flex-start;
+    }
+
+
+  
+
+   
+
+    
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .chartSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    
+    }
+
+    .chartContainerleft {
+        width: 97%;
+        height:230px
+    
+    }
+
+    .chartContainerright {
+        width: 97%;
+    }
+
+    .chart {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .chartBar{
+        width:5%
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .mainscreenright .menuContainer {
+        grid-template-columns: 100% ;
+    }
+
+    .recentContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+
+
+
+}

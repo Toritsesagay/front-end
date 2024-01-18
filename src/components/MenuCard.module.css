@@ -1,0 +1,76 @@
+
+
+.menucard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.2);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menucard span {
+    padding: 20px;
+    background-color: green;
+    border-radius: 100%;
+    color: #fff
+}
+
+.menucard:nth-of-type(1) span {
+    background-color: brown;
+
+}
+
+.menucard:nth-of-type(2) span {
+    background-color: rgb(133, 177, 133)
+}
+
+.menucard:nth-of-type(3) span {
+    background-color: orange
+}
+
+.menucard:nth-of-type(4) span {
+    background-color: orangered;
+
+}
+
+.menucard:nth-of-type(5) span {
+    background-color: skyblue;
+
+}
+
+.menucard:nth-of-type(6) span {
+    background-color: #5c5c5c;
+
+}
+
+.menucard p {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+
+}
+
+
+@media screen and (max-width: 310px) {
+
+    .menucard p {
+        font-size: .8rem;
+        color: black;
+        font-weight: 600;
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+

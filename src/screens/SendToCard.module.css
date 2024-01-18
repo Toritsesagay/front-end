@@ -1,0 +1,339 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+}
+
+/*  end of styling the sidebar */
+.screenContainer .maindashboard {
+    width: 83%;
+}
+
+/* styling the dashboard section */
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.mainscreenleft {
+    width: 60%;
+}
+
+
+.helpCard {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+
+.header {
+    width: 100%;
+    background-color: rgb(109, 156, 109);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header h4 {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.header span {
+    font-size: 1rem;
+    padding: 3px;
+    border-radius: 100%;
+    color: #fff;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.body {
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+
+table {
+    width: 1600px;
+}
+
+table tr {
+    margin-bottom: 20px;
+}
+
+table th {
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+
+
+table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-weight: 400;
+   
+}
+
+
+.status {
+    color: #ff0000
+}
+
+
+
+
+
+
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+
+
+
+.mainscreenright {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+
+}
+
+.buttonHeading{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.buttonHeading button{
+    width:220px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.form {
+    width: 100%;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+
+.form .formbody {
+    padding: 10px
+}
+
+.form .formbody h6{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.options p {
+    font-size: 1rem;
+    font-family: Poppins;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+
+}
+
+.form input,.form select,
+.form button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.form button {
+    background-color: rgb(109, 156, 109);
+    color: #fff;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+/*styling the favorite list card */
+.addToFavorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.addToFavorite p {
+    margin: 0px;
+}
+
+.addToFavorite input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+
+/*
+styling the summary section
+*/
+
+.summary{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width:100%;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+
+.summary h4{
+    font-weight: 300;
+    color: rgb(109, 156, 109);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.summary p{
+    font-weight: 300;
+    color: rgb(104, 104, 104);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: Poppins;
+
+}
+
+.summary p span{
+    
+    color: rgb(158, 158, 158);
+
+}
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+
+
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+
+
+
+    .mainscreenleft {
+        width: 100%;
+    }
+
+    .mainscreenright {
+        width: 100%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+
+
+
+
+
+
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .mainscreen {
+        padding-left: 0px;
+    }
+
+
+    .buttonHeading button{
+        width:48%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+    .options p {
+        font-size: .8rem;
+    }
+
+
+
+}

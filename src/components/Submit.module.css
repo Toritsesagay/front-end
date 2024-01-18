@@ -1,0 +1,19 @@
+.btn_container{
+    width:100%;
+    
+    background-color: rgb(109, 156, 109);
+    border: none;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    z-index:0;
+}
+
+.btn_container text{
+    color:#fff;
+    margin:auto;
+    display:inline;
+    font-size: 1.1rem;
+    font-weight: 900;
+}

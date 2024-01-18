@@ -1,0 +1,725 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(251, 251, 251);
+}
+
+/*  end of styling the sidebar */
+.screenContainer .maindashboard {
+    width: 83%;
+}
+
+/* styling the dashboard section */
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.mainscreenleft {
+    width: 60%;
+    padding: 10px;
+}
+
+
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+
+
+.mainscreenright {
+    width: 60%;
+    padding: 10px;
+
+}
+
+.mainscreenright .menuContainer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.greeting{
+    margin-bottom: 20px;
+   
+
+}
+.greeting h2{
+    font-weight: 300;
+    color: black;
+    color:rgb(153, 160, 153);
+    font-size: 1.2rem;
+
+
+}
+
+
+.recent {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+
+}
+
+.recent h1 {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    margin-bottom: 30px;
+    color:rgb(153, 160, 153);
+}
+
+.recentContainer {
+    display: flex;
+}
+
+.recentContainer .recentSend,
+.recentContainer .recentRecharge,
+.recentContainer .recentAmount,
+.recentContainer .recentPay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.recentContainer span {
+    padding: 20px;
+    border-radius: 100%;
+    color: #fff
+}
+
+.recentContainer p {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.recentAmount span {
+    background-color: rgb(109, 156, 109);
+
+}
+
+.recentRecharge span,
+.recentSend span,
+.recentPay span {
+    background-color: rgb(221, 255, 221);
+    color: rgb(85, 147, 85);
+
+}
+
+
+/*new styling section*/
+.chartSection,
+.summarySection {
+    padding-top: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.bankName h3 {
+    color: rgb(109, 156, 109);
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+.bankInfoCon {
+    row-gap: 40px;
+    
+}
+
+
+.bankInfo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.bankInfo .accountType{
+    color: rgb(81, 81, 81);
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: Poppins;
+    margin: 0px;
+
+}
+
+
+
+
+
+.bankInfo .accountBalance{
+    color: rgb(81, 81, 81);
+    font-size: 1.3rem;
+    font-family: Poppins;
+    color:rgb(109, 156, 109);
+    font-weight: 300;
+    margin: 0px;
+}
+
+
+
+
+.buttonCon {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 150px;
+    color: rgb(60, 60, 60);
+    font-size: .8rem;
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+    
+}
+
+
+
+.summaryContainer{
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+.passportContainer{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width:200px;
+    margin-right: 10px;
+}
+
+.passportContainer h4{
+    font-weight: 300;
+    color: rgb(109, 156, 109);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+
+.imgContainer{
+    width:90%;
+    overflow: hidden;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    
+}
+
+.img{
+    width:100%
+
+}
+
+.summary{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width:250px;
+    padding-bottom: 5px;
+}
+
+.summary h4{
+    font-weight: 300;
+    color: rgb(109, 156, 109);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.summary p{
+    font-weight: 300;
+    color: rgb(104, 104, 104);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: Poppins;
+
+}
+
+.summary p span{
+    
+    color: rgb(158, 158, 158);
+
+}
+
+
+
+.summarySection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summarySectionLeft,
+.summarySectionRight {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+.summarySectionLeft .imageContainer {
+    width: 90%;
+
+}
+
+.summarySectionLeft .imageContainer img {
+    width: 100%
+}
+
+.summarySection h6 {
+    color: rgb(109, 156, 109);
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+
+}
+
+
+.summarySectionRight {}
+
+.accountSummary {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.properties,
+.propertiesValue {
+    width: 50%;
+    font-size: .9rem;
+    color: rgb(82, 82, 82);
+    font-weight: 400;
+    font-family: Poppins;
+
+}
+
+.propertiesValue {
+    text-align: center;
+}
+
+
+
+
+
+/*  help card section */
+.block{
+    width:6px;
+    height:18px;
+    background-color:  rgb(109, 156, 109);
+    display: inline-block;
+    margin-right: 5px;
+    color:rgb(153, 160, 153);
+}
+
+.helpCard {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+.header {
+    width: 100%;
+    /*background-color: rgb(109, 156, 109);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.header h4 {
+    font-size: 1.3rem;
+    color:rgb(110, 110, 110);
+    
+}
+
+
+
+.body {
+    overflow-x: scroll;
+    
+}
+
+
+table {
+    width:600px;
+}
+
+table tr {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+th, td { border-bottom: 10px solid rgb(246, 246, 246);padding: 5px;margin: 5px;height:65px }
+
+
+table th {
+    color: #696969;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-family: Poppins;
+}
+
+
+table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #474747;
+    font-weight: lighter;
+    font-size: .9rem;
+    font-family: Poppins;
+}
+
+.bullet{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+.transactionType{
+    color: red;
+    height: 10px;
+}
+
+
+
+.status {
+    color: #ff0000
+}
+
+.pay {
+    width: 60px;
+    color: rgb(109, 156, 109);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cardContainer{
+    margin-bottom: 40px;
+}
+
+
+
+.metricsContainer{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.metrics{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    margin-right: 10px;
+    font-family: Poppins;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.metrics:hover{
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+}
+
+.metrics .title{
+    font-size: .9rem;
+    color:rgb(121, 121, 121);
+    margin: 0px;
+
+
+}
+.metrics .number{
+    font-size: 2rem;
+    font-family: Poppins;
+    margin: 0px;
+    color:rgb(109, 156, 109);;
+    font-weight:lighter;
+}
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+@media screen and (max-width:768px) {
+
+
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+
+
+
+    .mainscreenleft {
+        width: 100%;
+    }
+
+    .mainscreenright {
+        width: 100%;
+
+    }
+
+
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+
+
+
+
+    /* styling the chart section */
+    .recent {
+        width: 100%;
+    }
+
+    .mainscreenright .menuContainer {
+        grid-template-columns: 48% 48%;
+    }
+
+
+
+
+    /* adding new styles */
+
+    .bankInfoCon {
+        grid-template-columns: 98%;
+    }
+
+
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+    .screenContainer {
+        height: 87vh
+    }
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+
+
+
+
+    .mainscreen {
+        padding-left: 0px;
+    }
+
+
+
+
+    /* charts section*/
+
+    .chartSection,
+    .summarySection {
+        width: 97%;
+
+    }
+
+    /*styling recent*/
+    .recentContainer p {
+        font-size: .8rem;
+    }
+
+    .chartInfo {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .chart {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+        justify-content: flex-start;
+    }
+
+    /*  new styling */
+    .bankInfoCon {
+        grid-template-columns: 48% 48%;
+    }
+
+
+    .chartSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summarySection,
+    .chartSection {
+        width: 100%;
+        padding-top: 10px;
+
+    }
+
+    .chartContainerleft {
+        width: 97%;
+        height: 230px
+    }
+
+    .chartContainerright {
+        width: 97%;
+    }
+
+    .chart {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .chartBar {
+        width: 5%
+    }
+
+    .summaryContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .summaryContainer .passportContainer{
+        width:80%;
+        margin-bottom: 30px;
+
+    }
+    .summaryContainer .summary{
+        width:90%;
+
+    }
+
+
+    .metricsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metrics{
+        width:100%
+    }
+    
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .summarySection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summarySectionLeft,
+    .summarySectionRight {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .bankInfoCon {
+        grid-template-columns: 100%;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 280px) {
+
+    .mainscreenright .menuContainer {
+        grid-template-columns: 100%;
+    }
+
+    .recentContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bankInfoCon {
+        grid-template-columns: 100%;
+    }
+
+
+
+
+
+
+
+}

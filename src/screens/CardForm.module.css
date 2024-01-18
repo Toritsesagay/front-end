@@ -1,0 +1,386 @@
+.screenContainer {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+}
+
+/*  end of styling the sidebar */
+.screenContainer .maindashboard {
+    width: 83%;
+}
+
+/* styling the dashboard section */
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.mainscreenleft {
+    width: 60%;
+}
+
+
+.screenContainer .maindashboard {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+.mainscreenright {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 40px;
+
+}
+
+.form {
+    width: 80%;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+.form .formbody {
+    padding: 10px
+}
+
+.form .formbody p {
+    font-size: 1rem;
+}
+
+
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.options p {
+    font-size: 1rem;
+    font-family: Poppins;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+
+}
+
+.form input,
+.form button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.form button {
+    background-color: rgb(109, 156, 109);
+    color: #fff;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+/*styling the favorite list card */
+.addToFavorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.addToFavorite p {
+    margin: 0px;
+}
+
+.addToFavorite input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.helpCard {
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(109, 156, 109);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.header h4 {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.header span {
+    font-size: 1rem;
+    padding: 3px;
+    border-radius: 100%;
+    color: #fff;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.body {
+    padding: 10px;
+}
+
+
+.body p {
+    color: black;
+    font-size: 1rem;
+}
+
+
+.question {
+    text-align: center;
+    color: rgb(109, 156, 109);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+
+}
+
+/* styling the card section */
+
+
+
+/* credit card */
+.cardContainer {
+    width: 80%;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /*background-color: rgb(158, 158, 158);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.creditCard {
+    background-color: rgb(109, 156, 109);
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.creditCard {
+    width: 100%;
+    z-index: 5;
+
+}
+
+
+
+.creditCard h2 {
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -20px;
+
+}
+
+.creditCard .circleContainer {
+    position: absolute;
+    top: -40px;
+    display: flex;
+    gap: 5px;
+    left: -20px;
+
+}
+
+.creditCard .circle {
+    background-color: rgba(250, 250, 250, 0.3);
+    width: 170px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+
+
+}
+
+
+.creditCard .cardInfo {
+
+    margin-top: 60px;
+    width: 100%
+}
+
+.creditCard .cardInfo h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    width: 100%;
+}
+
+
+
+.creditCard .cardInfo p {
+    font-size: 1.2rem;
+    color: #fff
+}
+
+.creditCard .cardInfo {}
+
+.creditCard .circle:nth-of-type(2) {
+    position: relative;
+    left: -50px;
+    top: -26px
+}
+
+
+.paginate{
+    text-align: center;
+    color:rgb(109, 156, 109);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.paginateContainer{
+    display: flex;
+    justify-content: center;
+    width:80%;
+}
+
+.paginateContainer .paginate{
+    margin-right: 10px;
+}
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+
+
+    .mainscreen {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+
+    .screenContainer .maindashboard {
+        width: 78%;
+    }
+
+
+
+
+    .mainscreenleft {
+        width: 100%;
+    }
+
+    .mainscreenright {
+        width: 100%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* mobile screen*/
+@media screen and (max-width: 480px) {
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .mainscreen {
+        padding-left: 0px;
+    }
+
+    /* credit card */
+    .cardContainer {
+        width: 100%;
+
+    }
+    .helpCard {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form input,
+    .form button {
+        width: 100%;
+
+    }
+
+    .paginateContainer{
+        width:100%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+    .options p {
+        font-size: .8rem;
+    }
+
+
+
+}

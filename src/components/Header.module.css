@@ -1,0 +1,312 @@
+.header {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 7px;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+
+}
+
+.header .innerheader {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+    justify-content: space-between;
+    height: 100%;
+    /*box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);*/
+}
+
+.innerheaderleft {
+    display: flex;
+    width: 40%;
+    align-items: center;
+
+}
+
+.innerheaderleft span {
+    padding: 10px;
+    cursor: pointer;
+    margin: 0px;
+    background-color: transparent;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding-left: 0px;
+}
+
+.innerheaderleft h2 {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    flex:1;
+    padding-left: 5px;
+    font-weight: 200;
+}
+
+.innerheaderright .headerImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid rgb(228, 228, 228);
+    overflow: hidden;
+    background-color: rgb(239, 239, 239);
+}
+
+
+
+.innerheaderright .headerImage img {
+    width: 100%;
+
+}
+
+.innerheaderright {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.innerheaderright .hamburger {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    display: none;
+
+}
+
+
+.innerheaderrightbutton {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+
+}
+
+.withdraw,
+.deposit {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.withdraw {
+    background-color: rgb(109, 156, 109);
+    margin-right: 10px;
+}
+
+.deposit {
+    color: black
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.notification span {
+    color: rgb(188, 188, 188);
+    font-size: 1.9rem;
+}
+
+.notification .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgb(97, 136, 97);
+    top: 3px;
+    left:16px
+}
+
+
+/* styling the mobile menu */
+.mobilemenu {
+    width: 100%;
+    background-color: #ffff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+    padding-bottom: 0px;
+    display: none;
+    position: absolute;
+    top: -400px;
+    transition: top 1s ease-in;
+    z-index: -2;
+    list-style-type: none;
+}
+
+.showmenu {
+    top: 50px;
+    transition: all 1s ease-in;
+
+
+}
+
+.mobilemenu .item {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    margin: 0px;
+    padding-left: 2px;
+    border-bottom: 1px solid rgb(250, 250, 250);
+    font-weight: 300;
+    cursor: pointer;
+    list-style-type: none;
+
+}
+
+
+.mobilemenu .signout {
+    background-color: rgb(109, 156, 109);
+    color: #fff;
+    text-align: center;
+}
+
+.mobilemenu .item:hover,
+.mobilemenu .signout:hover {
+    background-color: rgb(250, 250, 250);
+    color: #5c5c5c;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    .withdraw,
+.deposit {
+    display: none;
+}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+   
+
+    .screenContainer .maindashboard .innerheader {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        background-color: #fff;
+        justify-content: space-between;
+    }
+
+    .screenContainer .maindashboard .header .innerheader span:nth-of-type(1) {
+        cursor: pointer;
+        width: 20px;
+        margin: 0px;
+        padding: 0px;
+        background: transparent;
+
+    }
+
+    .innerheaderleft{
+        width:55%
+    }
+    .innerheaderleft h2 {
+        font-size: 1.3rem;
+        text-align: left;
+       
+    }
+
+    
+    .innerheaderleft span{
+        background-color: white;
+        width: 15px;
+    }
+
+    .innerheaderright .hamburger {
+
+        display: flex;
+
+    }
+
+    .innerheaderright {
+        width: 50%;
+        gap: 13px;
+        justify-content: flex-end;
+
+    }
+
+    .innerheaderrightbutton {
+        display: none;
+
+    }
+
+    .withdraw,
+    .deposit {
+        display: none;
+    }
+
+
+    /* styling the mobile menu */
+    .mobilemenu {
+        display: block;
+    }
+
+    .screenContainer .maindashboard {
+        width: 100%;
+    }
+
+    /* dashboard */
+    .screenContainer .maindashboard {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+
+    .screenContainer .maindashboard .dashboard {
+        margin: 5px;
+        width: 97%;
+    }
+
+    .mainscreen {
+        padding-left: 0px;
+    }
+
+    /* charts section*/
+
+    .chartSection {
+        width: 97%;
+        background-color: #fff;
+
+    }
+
+    /*styling recent*/
+    .recentContainer p {
+        font-size: .8rem;
+    }
+
+
+  
+
+
+
+
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .innerheaderleft span {
+        margin-right:10px;
+    }
+
+
+}

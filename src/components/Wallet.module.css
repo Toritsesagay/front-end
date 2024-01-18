@@ -1,0 +1,130 @@
+
+
+.dashboard {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+
+}
+
+/* balance section */
+
+.balanceSection {
+    display: flex;
+
+}
+
+.balance {
+    padding: 10px;
+    width: 60%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.balance p {
+    font-weight: 600;
+    color: #5c5c5c;
+    font-weight: Poppins;
+    font-size: .9rem;
+    margin-bottom: 0px;
+}
+
+.balance h4{
+    font-size: 1.1rem;
+    font-family: Poppins;
+    margin-bottom: 0px;
+}
+
+.balance p:nth-of-type(2) {
+    font-size: 1.2rem;
+}
+
+.balance span {
+    color: rgb(109, 156, 109);
+    font-size: 1.4rem;
+}
+
+.balanceChart {
+    width: 40%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.InfoContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* small laptop screens */
+@media screen and (max-width:1024px) {}
+
+/* ipad screens */
+
+@media screen and (max-width:768px) {
+
+   .dashboard {
+        width: 100%;
+    }
+
+
+  
+
+
+
+}
+
+
+/* mobile screen*/
+
+@media screen and (max-width: 480px) {
+   
+  
+
+
+   .dashboard {
+        margin: 5px;
+        width: 97%;
+    }
+
+   
+
+
+
+  
+
+
+
+
+
+}
+@media screen and (max-width: 350px) {
+    .InfoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .balance p:nth-of-type(2) {
+        font-size: .8rem;
+    }
+
+    .balance h4{
+        font-size: 1.1rem;
+        font-family: Poppins;
+    }
+    
+   
+ 
+ }
+ 
+
+
