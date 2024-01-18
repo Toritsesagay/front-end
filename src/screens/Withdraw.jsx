@@ -154,9 +154,9 @@ function Withdraw() {
         {isError && <Modal closeModal={closeModal} content={isErrorInfo} />}
 
         <div className={styles.screenContainer}>
-            <SideBar active={'Withdraw'} />
+            <SideBar active={'Bill Pay'} />
             <div className={styles.maindashboard} style={{ height: '100vh' }} >
-                <Header home={false} title={'Withdraw'} />
+                <Header home={false} title={'Bill Pay'} />
 
                 <div className={styles.mainscreen}>
                   
