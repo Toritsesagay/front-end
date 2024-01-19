@@ -37,7 +37,7 @@ export const userAuthReducer = (state = initialState, action) => {
                 user: action.payload.user,
                 userToken: action.payload.userToken,
                 accounts: action.payload.accounts,
-                cards:action.payload.accounts,
+                cards:action.payload.cards,
                 loans:action.payload.loans,
                 histories:action.payload.histories
             }
