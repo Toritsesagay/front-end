@@ -445,6 +445,18 @@ table td {
     margin-bottom: 40px;
 }
 
+.inputContainer{
+    width:80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.inputContainer label{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
 
 
 .metricsContainer{

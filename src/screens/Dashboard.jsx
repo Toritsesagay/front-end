@@ -33,6 +33,8 @@ function Dashboard() {
 
     let dispatch = useDispatch()
 
+    console.log(cards)
+
 
 
     useEffect(() => {
@@ -213,16 +215,31 @@ function Dashboard() {
 
 
 
+                        {cards.length > 0 && cards.map(data=><div key={data._id}>
+                            <div className={styles.cardContainer}>
+                                <Cards
+                                    number={data.cardNumber}
+                                    expiry={data.expiry}
+                                    cvc={data.cvv}
+                                    name={`${user.firstName} ${user.lastName}`}
+                                    className={styles.card}
+                                />
+                            </div>
 
-                        <div className={styles.cardContainer}>
-                            <Cards
-                                number={'52XX XXXX XXXX XXXX'}
-                                expiry={'09/30'}
-                                cvc={'675'}
-                                name={`${user.firstName} ${user.lastName}`}
-                                className={styles.card}
-                            />
-                        </div>
+                            <div className={styles.inputContainer}>
+                                <label>Card balance</label>
+                                <input value={`$${data.Balance}`} readOnly />
+
+                            </div>
+
+                        </div>)}
+
+
+
+
+
+
+
 
                         <div className={styles.metricsContainer}>
                             <div className={styles.metrics} onClick={() => menuHandler('transaction-history')}>
