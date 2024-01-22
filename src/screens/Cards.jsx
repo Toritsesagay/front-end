@@ -262,8 +262,8 @@ const CardPage = () => {
 
                             <ul className="footer-contact-info">
                                 <li><span>Location:</span> 27 Division St, NY 10002, USA</li>
-                                <li><span>Phone:</span> <a href="tel:+321984754">+ (321) 984 754</a></li>
-                                <li><span>Fax:</span> <a href="tel:+12129876543">+1-212-9876543</a></li>
+                                <li><span>Phone:</span> <a href="tel:+321984754">+1 (956) 429-2899</a></li>
+                                <li><span>Fax:</span> <a href="tel:+12129876543">+1 (956) 429-2899</a></li>
                             </ul>
                         </div>
                     </div>
