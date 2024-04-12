@@ -50,7 +50,7 @@ export const signup = (data) => {
   let objData = data
   return async (dispatch, getState) => {
     try {
-      const response = await fetch(`https://back-end-kiaqpay.onrender.com/signup`, {
+      const response = await fetch(`https://back-end-kiaq.onrender.com/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -129,7 +129,7 @@ export const login = (data) => {
     let userData = data
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch('https://back-end-kiaqpay.onrender.com/login', {
+      const response = await fetch('https://back-end-kiaq.onrender.com/login', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
